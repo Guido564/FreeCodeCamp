@@ -4,33 +4,34 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="CSS/styles.css">
     <title>Gloria eterna a Arstotzka</title>
 </head>
 <body>
     <h1 id="title">Evaluacion ingreso</h1>
-    <p id="description">Nuestra gran Nacion el estado Arstotzka exige la entrega inmediata de la documentacion propicia a fin de determinar si usted cuenta con los requerimientos MINIMOS e INDISPENSABLES para una grata incorporacion a la vida civil entre nuestros compatriotas, por favor colabore y tenga en cuenta que las repercusiones legales en caso de falsificacion etc etc van desde trabajo forzado hasta la muerte</p>
+    <p id="description">Nuestra gran Nacion el estado de Arstotzka exige la entrega inmediata de la documentacion propicia a fin de determinar si usted cuenta con los requerimientos MINIMOS e INDISPENSABLES para una grata incorporacion a la vida civil entre nuestros compatriotas, por favor colabore y tenga en cuenta que las repercusiones legales en caso de falsificacion etc etc van desde trabajo forzado hasta la muerte.</p>
     <form id="survey-form">
         <fieldset>
-            <legend>Datos personales</legend>
+            <h2>Datos personales</h2>
             <label id="name-label">Nombre completo: <input type="text" name="nombre" id="name" placeholder="Vladimir Volkov" required></label>
             <label>Fecha de nacimiento: <input type="date" name="nacimiento" required></label>
             <label id="number-label">Edad: <input type="number" min="16" max="110" name="anios" id="number" placeholder="28" required></label>
             <label>Sexo: 
-                <label><input type="radio" name="sexo" class="sexo" value="m" required> M</label>
-                <label><input type="radio" name="sexo" class="sexo" value="f" required> F</label>
+                <label><input type="radio" name="sexo" class="inline" value="m" required> M</label>
+                <label><input type="radio" name="sexo" class="inline" value="f" required> F</label>
             </label>
             <label>Foto de su rostro en forma natural: <input type="file" name="fotin" required></label>
             <label id="email-label">Direccion de correo electronico: <input type="email" id="email" placeholder="elvladuvolkov@hotmail.com" required></label>  
         </fieldset>
         <fieldset>
-            <legend>Datos del pasaporte</legend>
+            <h2>Datos del pasaporte</h2>
             <label>Pais de emision: <input type="text" name="pais" required></label>
             <label>Provincia de emision: <input type="text" name="provincia" required></label>
             <label>Fecha de vencimiento: <input type="date" name="expiracion" required></label>
             <label>ID: <input type="text" name="identificacion" required></label>
         </fieldset>
         <fieldset>
-            <legend>Otros detalles a tener en cuenta</legend>
+            <h2>Otros detalles a tener en cuenta</h2>
             <label>Motivo de ingreso:
                 <select id="dropdown">
                     <option value="seleccion">(Eliga una opcion)</option>
@@ -39,14 +40,19 @@
                     <option value="sospecha">Otro</option>
                 </select>
             </label>
+            <br>
             <label>Se compromete a respetar las leyes y disposiciones del gobierno estando dispuesto a presentarse para el cumplimiento de las mismas en cualquier momento/lugar?
-                <input type="checkbox" value="aceptado"> Si
-                <input type="checkbox" value="no-aceptado"> Absolutamente si
-                <input type="checkbox" value="impostor"> He de pensarlo (Si, pero aun no he tenido tiempo de pensar bien al respecto)
+                <br>
+                <input type="checkbox" value="aceptado" class="inline"> Si
+                <br>
+                <input type="checkbox" value="no-aceptado" class="inline"> Absolutamente si
+                <br>
+                <input type="checkbox" value="impostor" class="inline"> He de pensarlo (Si, pero aun no he tenido tiempo de reflexionar bajo la mirada adecuada)
             </label>
-            <label>Aclaraciones, dudas o consultas: <textarea rows="3" cols="30" placeholder="Viva la patria, viva Arstotzka" name="espacio-de-consultas"></textarea></label>
+            <br>
+            <label>Aclaraciones, dudas o consultas: <textarea rows="6" cols="30" placeholder="Viva la patria, viva Arstotzka" name="espacio-de-consultas"></textarea></label>
         </fieldset>
-        <button type="submit" id="submit">Submit</button>
+        <input type="submit" value="Submit">
     </form>
 </body>
 </html>
