@@ -12,9 +12,9 @@
         <h1>HTML/CSS Quiz</h1>
         <nav>
           <ul>
-            <li><a href="#student-info">INFO</a></li>
-            <li><a href="#html-questions">HTML</a></li>
-            <li><a href="#css-questions">CSS</a></li>
+            <li><a href="#student-info" accesskey="i">INFO</a></li>
+            <li><a href="#html-questions" accesskey="h">HTML</a></li>
+            <li><a href="#css-questions" accesskey="c">CSS</a></li>
           </ul>
         </nav>
     </header>
@@ -23,15 +23,15 @@
         <section role="region" aria-labelledby="student-info">
           <h2 id="student-info">Student Info</h2>
           <div class="info">
-            <label for="name">Name</label>
+            <label for="name">Name:</label>
             <input id="name" type="text" name="name">
           </div>
           <div class="info">
-            <label for="email-adress">Email Adress</label>
+            <label for="email-adress">Email:</label>
             <input id="email-adress" type="email" name="email">
           </div>
           <div class="info">
-            <label for="birth-date">Date of Birthday<span class="sr-only">(Date of Birth)</span></label>
+            <label for="birth-date">Birthday:<span class="sr-only">(Date of Birth)</span></label>
             <input id="date-of-birth" type="date" name="age">
           </div>
         </section>
@@ -42,8 +42,16 @@
             <fieldset class="question" name="1">
               <legend>The legend element represents a caption for the content of its parent fieldset element</legend>
               <ul class="answers-list">
-                <li><label for=""><input type="radio"></label></li>
-                <li><label for=""><input type="radio"></label></li>
+                <li>
+                  <label for="true">
+                    <input type="radio" id="true" value="True" name="question1">True
+                  </label>
+                </li>
+                <li>
+                  <label for="false">
+                    <input type="radio" id="false" value="False" name="question1">False
+                  </label>
+                </li>
               </ul>
             </fieldset>
           </div>
@@ -52,16 +60,52 @@
             <fieldset class="question" name="1">
               <legend>A label element nesting an input element is required to have a for attribute with the same value as the input's id</legend>
               <ul class="answers-list">
-                <li> <label for=""><input type="radio"></label> </li>
-                <li><label for=""><input type="radio"></label></li>
+                <li>
+                  <label for="true">
+                    <input type="radio" id="true" value="True" name="question2">True
+                  </label>
+                </li>
+                <li>
+                  <label for="false">
+                    <input type="radio" id="false" value="False" name="question2">False
+                  </label>
+                </li>
               </ul>
             </fieldset>
           </div>
         </section>
         <section role="region" aria-labelledby="css-questions">
           <h2 id="css-questions">CSS questions</h2>
+          <div class="formrow">
+            <div class="question-block">
+              <label for="q1">Are you a frontend developer?</label>
+            </div>
+            <div class="answer">
+              <select name="a1" id="q1" required>
+                <option value="">Select an option</option>
+                <option value="yes">Yes</option>
+                <option value="no">No</option>
+              </select>
+            </div>
+            <div class="question-block">
+              <label for="q2">Do you have any questions:</label>
+            </div>
+            <div class="answer">
+              <textarea name="thing-to-complete" id="q2" placeholder="I want to know if you guys are hiring" cols="30" rows="10"></textarea>
+            </div>
+          </div>
         </section>
+        <button type="submit">Submit</button>
       </form>
     </main>
+    <footer>
+      <address>
+        <a href="https://freecodecamp.org" target="_blank">freeCodeCamp</a>
+        <br/>
+        San Francisco<br/>
+        California<br/>
+        USA
+      </address>
+    </footer>
   </body>
 </html>
