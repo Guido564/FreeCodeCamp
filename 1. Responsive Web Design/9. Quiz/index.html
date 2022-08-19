@@ -24,19 +24,39 @@
           <h2 id="student-info">Student Info</h2>
           <div class="info">
             <label for="name">Name</label>
-            <input id="name" type="text" name="name" placeholder="Insert your name please">
+            <input id="name" type="text" name="name">
           </div>
           <div class="info">
             <label for="email-adress">Email Adress</label>
-            <input id="email-adress" type="email" name="email" placeholder="Insert your email please">
+            <input id="email-adress" type="email" name="email">
           </div>
           <div class="info">
-            <label for="date-of-birth">Date of Birth</label>
-            <input id="date-of-birth" type="date" name="age" placeholder="Insert your date of birth please">
+            <label for="birth-date">Date of Birthday<span class="sr-only">(Date of Birth)</span></label>
+            <input id="date-of-birth" type="date" name="age">
           </div>
         </section>
         <section role="region" aria-labelledby="html-questions">
           <h2 id="html-questions">HTML questions</h2>
+          <div class="question-block">
+            <p>1</p>
+            <fieldset class="question" name="1">
+              <legend>The legend element represents a caption for the content of its parent fieldset element</legend>
+              <ul class="answers-list">
+                <li><label for=""><input type="radio"></label></li>
+                <li><label for=""><input type="radio"></label></li>
+              </ul>
+            </fieldset>
+          </div>
+          <div class="question-block">
+            <p>2</p>
+            <fieldset class="question" name="1">
+              <legend>A label element nesting an input element is required to have a for attribute with the same value as the input's id</legend>
+              <ul class="answers-list">
+                <li> <label for=""><input type="radio"></label> </li>
+                <li><label for=""><input type="radio"></label></li>
+              </ul>
+            </fieldset>
+          </div>
         </section>
         <section role="region" aria-labelledby="css-questions">
           <h2 id="css-questions">CSS questions</h2>
